@@ -654,7 +654,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                     if (prevV !== currV) cvcBonus += 25; 
                 }
                 const reverse = name.split('').reverse().join('');
-                if (name === reverse && len > 1) { cvcBonus += 40; log("Symmetry: Palindrome", 'good', 80); }
+                if (name === reverse && len > 1) { cvcBonus += 80; log("Symmetry: Palindrome", 'good', 80); }
 
                 let vowels = 0; for(let char of bestPhonetic) if(isVowel(char)) vowels++;
                 if (vowels === 0 && len > 1 && !isNumeric) {
