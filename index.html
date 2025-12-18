@@ -556,11 +556,11 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             else if (len === 6) lengthBonus = 120;
             else if (len > 6) lengthBonus = -((len-6) * 30);
             
-            // Cultural Immunity Logic: Waive length penalty AND give minimum +50 for icons
+            // Cultural logic
             if (isCultural) {
                 if (lengthBonus < 50) {
-                    lengthBonus = 50; // Force minimum +50 for icons like "Herobrine"
-                    log("Length: Icon Immunity Applied (+50 Min)", 'good', 50);
+                    lengthBonus = 50; 
+                    log("Length: Icon", 'good', 50);
                 } else {
                     log(`Length: Scarcity Bonus (${len})`, 'good', lengthBonus);
                 }
