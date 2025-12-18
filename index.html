@@ -172,12 +172,11 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <span class="material-symbols-outlined">refresh</span>
 </button>
 </div>
-<span class="material-symbols-outlined text-sm">code</span> Download Source
-                </button>
+
 </div>
 </div>
 <!-- Badges -->
-<div class="flex gap-2 justify-center transition-all duration-500 opacity-100 scale-100" id="statusBadges">
+<div class="flex gap-2 justify-center transition-all duration-500 opacity-100 scale-100 hidden" id="statusBadges">
 <div class="px-3 py-1 bg-hytale-bg border border-hytale-green/50 text-hytale-green text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="dictionaryBadge">FAMOUS</div>
 <div class="hidden px-3 py-1 bg-hytale-bg border border-hytale-gold/50 text-hytale-gold text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="leetBadge">
 <span class="material-symbols-outlined text-sm">translate</span> Leet
@@ -196,11 +195,11 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <span class="material-symbols-outlined text-5xl text-hytale-blue animate-spin mb-4">settings</span>
 <div class="font-rpg text-xl text-white tracking-widest animate-pulse">Consulting the Oracle...</div>
 </div>
-<div class="h-full flex flex-col items-center justify-center text-gray-600 border-2 border-dashed border-hytale-border rounded-sm bg-hytale-bg/30 p-12 hidden" id="emptyState">
+<div class="h-full flex flex-col items-center justify-center text-gray-600 border-2 border-dashed border-hytale-border rounded-sm bg-hytale-bg/30 p-12" id="emptyState">
 <span class="material-symbols-outlined text-7xl mb-4 opacity-50">search</span>
 <p class="uppercase tracking-widest font-bold text-sm">Awaiting Input Query</p>
 </div>
-<div class="flex flex-col gap-4" id="results">
+<div class="flex flex-col gap-4 hidden" id="results">
 <!-- Score Card -->
 <div class="bg-gradient-to-br from-hytale-panel to-[#151824] border-2 border-hytale-border p-6 rounded-sm shadow-2xl relative overflow-hidden group">
 <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
