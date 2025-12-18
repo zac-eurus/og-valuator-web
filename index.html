@@ -61,13 +61,15 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
                             blue: '#00bfff',     // Magic/Mana
                             green: '#65c44c',    // Kweebec Green/Valid
                             red: '#e64553',      // Threat/Bad
-                            text: '#e8eaf0'      // Off-white text
+                            text: '#e8eaf0',     // Off-white text
+                            diamond: '#b9f2ff'   // Diamond/Icon
                         }
                     },
                     boxShadow: {
                         'rpg': '0 4px 0 0 rgba(0,0,0,0.3)',
                         'rpg-hover': '0 2px 0 0 rgba(0,0,0,0.3)',
                         'glow-gold': '0 0 15px rgba(255, 205, 77, 0.3)',
+                        'glow-diamond': '0 0 15px rgba(185, 242, 255, 0.4)',
                     },
                     animation: {
                         'pulse-once': 'pulse-once 0.5s ease-out forwards',
@@ -106,8 +108,16 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
             background-clip: text;
             animation: magic-shimmer 3s linear infinite;
         }
+        .text-legendary {
+            background: linear-gradient(to right, #ffcd4d 20%, #fff 50%, #ffcd4d 80%);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: magic-shimmer 4s linear infinite;
+        }
     </style>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-inset-1{inset:-0.25rem}.inset-0{inset:0px}.right-0{right:0px}.right-3{right:0.75rem}.top-0{top:0px}.top-1\/2{top:50%}.top-3{top:0.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.col-span-3{grid-column:span 3 / span 3}.mx-auto{margin-left:auto;margin-right:auto}.-mr-10{margin-right:-2.5rem}.-mt-10{margin-top:-2.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-\[-10px\]{margin-bottom:-10px}.ml-1{margin-left:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-32{height:8rem}.h-48{height:12rem}.h-full{height:100%}.h-px{height:1px}.min-h-\[400px\]{min-height:400px}.min-h-screen{min-height:100vh}.w-0{width:0px}.w-12{width:3rem}.w-2{width:0.5rem}.w-32{width:8rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-6xl{max-width:72rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-sm{border-radius:0.125rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-dashed{border-style:dashed}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-hytale-blue\/30{border-color:rgb(0 191 255 / 0.3)}.border-hytale-blue\/50{border-color:rgb(0 191 255 / 0.5)}.border-hytale-border{--tw-border-opacity:1;border-color:rgb(74 80 106 / var(--tw-border-opacity, 1))}.border-hytale-gold\/30{border-color:rgb(255 205 77 / 0.3)}.border-hytale-gold\/50{border-color:rgb(255 205 77 / 0.5)}.border-hytale-green\/30{border-color:rgb(101 196 76 / 0.3)}.border-hytale-green\/40{border-color:rgb(101 196 76 / 0.4)}.border-hytale-green\/50{border-color:rgb(101 196 76 / 0.5)}.border-hytale-light{--tw-border-opacity:1;border-color:rgb(54 59 82 / var(--tw-border-opacity, 1))}.border-hytale-red\/40{border-color:rgb(230 69 83 / 0.4)}.border-purple-400\/50{border-color:rgb(192 132 252 / 0.5)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.bg-\[\#0a0a0f\]{--tw-bg-opacity:1;background-color:rgb(10 10 15 / var(--tw-bg-opacity, 1))}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-hytale-bg{--tw-bg-opacity:1;background-color:rgb(14 16 25 / var(--tw-bg-opacity, 1))}.bg-hytale-bg\/30{background-color:rgb(14 16 25 / 0.3)}.bg-hytale-bg\/50{background-color:rgb(14 16 25 / 0.5)}.bg-hytale-bg\/80{background-color:rgb(14 16 25 / 0.8)}.bg-hytale-blue{--tw-bg-opacity:1;background-color:rgb(0 191 255 / var(--tw-bg-opacity, 1))}.bg-hytale-blue\/10{background-color:rgb(0 191 255 / 0.1)}.bg-hytale-border{--tw-bg-opacity:1;background-color:rgb(74 80 106 / var(--tw-bg-opacity, 1))}.bg-hytale-gold\/10{background-color:rgb(255 205 77 / 0.1)}.bg-hytale-green{--tw-bg-opacity:1;background-color:rgb(101 196 76 / var(--tw-bg-opacity, 1))}.bg-hytale-green\/10{background-color:rgb(101 196 76 / 0.1)}.bg-hytale-light{--tw-bg-opacity:1;background-color:rgb(54 59 82 / var(--tw-bg-opacity, 1))}.bg-hytale-light\/50{background-color:rgb(54 59 82 / 0.5)}.bg-hytale-panel{--tw-bg-opacity:1;background-color:rgb(33 37 54 / var(--tw-bg-opacity, 1))}.bg-hytale-panel\/50{background-color:rgb(33 37 54 / 0.5)}.bg-hytale-panel\/80{background-color:rgb(33 37 54 / 0.8)}.bg-hytale-red\/10{background-color:rgb(230 69 83 / 0.1)}.bg-purple-500\/10{background-color:rgb(168 85 247 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-hytale-blue{--tw-gradient-from:#00bfff var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 191 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-hytale-panel{--tw-gradient-from:#212536 var(--tw-gradient-from-position);--tw-gradient-to:rgb(33 37 54 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-purple-500{--tw-gradient-to:rgb(168 85 247 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#151824\]{--tw-gradient-to:#151824 var(--tw-gradient-to-position)}.to-hytale-gold{--tw-gradient-to:#ffcd4d var(--tw-gradient-to-position)}.to-hytale-green{--tw-gradient-to:#65c44c var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-12{padding:3rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-rpg{font-family:"Cinzel", serif}.font-ui{font-family:"Inter", sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-7xl{font-size:4.5rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-hytale-bg{--tw-text-opacity:1;color:rgb(14 16 25 / var(--tw-text-opacity, 1))}.text-hytale-blue{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.text-hytale-border{--tw-text-opacity:1;color:rgb(74 80 106 / var(--tw-text-opacity, 1))}.text-hytale-gold{--tw-text-opacity:1;color:rgb(255 205 77 / var(--tw-text-opacity, 1))}.text-hytale-green{--tw-text-opacity:1;color:rgb(101 196 76 / var(--tw-text-opacity, 1))}.text-hytale-red{--tw-text-opacity:1;color:rgb(230 69 83 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-gray-600::placeholder{--tw-placeholder-opacity:1;color:rgb(75 85 99 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.opacity-25{opacity:0.25}.opacity-50{opacity:0.5}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(255\2c 255\2c 255\2c 0\.3\)\]{--tw-shadow:0 0 10px rgba(255,255,255,0.3);--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-rpg{--tw-shadow:0 4px 0 0 rgba(0,0,0,0.3);--tw-shadow-colored:0 4px 0 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur{--tw-blur:blur(8px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_2px_2px_rgba\(0\2c 0\2c 0\2c 0\.8\)\]{--tw-drop-shadow:drop-shadow(0 2px 2px rgba(0,0,0,0.8));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_4px_4px_rgba\(0\2c 0\2c 0\2c 0\.5\)\]{--tw-drop-shadow:drop-shadow(0 4px 4px rgba(0,0,0,0.5));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-500{transition-duration:500ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.hover\:border-hytale-blue:hover{--tw-border-opacity:1;border-color:rgb(0 191 255 / var(--tw-border-opacity, 1))}.hover\:border-hytale-gold:hover{--tw-border-opacity:1;border-color:rgb(255 205 77 / var(--tw-border-opacity, 1))}.hover\:border-hytale-green:hover{--tw-border-opacity:1;border-color:rgb(101 196 76 / var(--tw-border-opacity, 1))}.hover\:bg-blue-400:hover{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.hover\:bg-hytale-green\/20:hover{background-color:rgb(101 196 76 / 0.2)}.hover\:bg-hytale-red\/20:hover{background-color:rgb(230 69 83 / 0.2)}.hover\:text-hytale-blue:hover{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.hover\:text-hytale-gold:hover{--tw-text-opacity:1;color:rgb(255 205 77 / var(--tw-text-opacity, 1))}.focus\:border-hytale-blue:focus{--tw-border-opacity:1;border-color:rgb(0 191 255 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:translate-y-1:active{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:shadow-none:active{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:focus-within .group-focus-within\:text-hytale-blue{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:rotate-12{--tw-rotate:12deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-50{opacity:0.5}.group:hover .group-hover\:duration-200{transition-duration:200ms}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-8{padding:2rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-inset-1{inset:-0.25rem}.inset-0{inset:0px}.right-0{right:0px}.right-3{right:0.75rem}.top-0{top:0px}.top-1\/2{top:50%}.top-3{top:0.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.col-span-3{grid-column:span 3 / span 3}.mx-auto{margin-left:auto;margin-right:auto}.-mr-10{margin-right:-2.5rem}.-mt-10{margin-top:-2.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-\[-10px\]{margin-bottom:-10px}.ml-1{margin-left:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-2{height:0.5rem}.h-3{height:0.75rem}.h-32{height:8rem}.h-48{height:12rem}.h-full{height:100%}.h-px{height:1px}.min-h-\[400px\]{min-height:400px}.min-h-screen{min-height:100vh}.w-0{width:0px}.w-12{width:3rem}.w-2{width:0.5rem}.w-32{width:8rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-6xl{max-width:72rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes spin{to{transform:rotate(360deg)}}.animate-spin{animation:spin 1s linear infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-sm{border-radius:0.125rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-gray-700{--tw-border-opacity:1;border-color:rgb(55 65 81 / var(--tw-border-opacity, 1))}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-hytale-blue\/30{border-color:rgb(0 191 255 / 0.3)}.border-hytale-blue\/50{border-color:rgb(0 191 255 / 0.5)}.border-hytale-border{--tw-border-opacity:1;border-color:rgb(74 80 106 / var(--tw-border-opacity, 1))}.border-hytale-diamond{--tw-border-opacity:1;border-color:rgb(185 242 255 / var(--tw-border-opacity, 1))}.border-hytale-gold\/30{border-color:rgb(255 205 77 / 0.3)}.border-hytale-gold\/50{border-color:rgb(255 205 77 / 0.5)}.border-hytale-green\/30{border-color:rgb(101 196 76 / 0.3)}.border-hytale-green\/40{border-color:rgb(101 196 76 / 0.4)}.border-hytale-green\/50{border-color:rgb(101 196 76 / 0.5)}.border-hytale-light{--tw-border-opacity:1;border-color:rgb(54 59 82 / var(--tw-border-opacity, 1))}.border-hytale-red\/40{border-color:rgb(230 69 83 / 0.4)}.border-purple-400\/50{border-color:rgb(192 132 252 / 0.5)}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.bg-\[\#0a0a0f\]{--tw-bg-opacity:1;background-color:rgb(10 10 15 / var(--tw-bg-opacity, 1))}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-hytale-bg{--tw-bg-opacity:1;background-color:rgb(14 16 25 / var(--tw-bg-opacity, 1))}.bg-hytale-bg\/30{background-color:rgb(14 16 25 / 0.3)}.bg-hytale-bg\/50{background-color:rgb(14 16 25 / 0.5)}.bg-hytale-bg\/80{background-color:rgb(14 16 25 / 0.8)}.bg-hytale-blue{--tw-bg-opacity:1;background-color:rgb(0 191 255 / var(--tw-bg-opacity, 1))}.bg-hytale-blue\/10{background-color:rgb(0 191 255 / 0.1)}.bg-hytale-border{--tw-bg-opacity:1;background-color:rgb(74 80 106 / var(--tw-bg-opacity, 1))}.bg-hytale-gold\/10{background-color:rgb(255 205 77 / 0.1)}.bg-hytale-green{--tw-bg-opacity:1;background-color:rgb(101 196 76 / var(--tw-bg-opacity, 1))}.bg-hytale-green\/10{background-color:rgb(101 196 76 / 0.1)}.bg-hytale-light{--tw-bg-opacity:1;background-color:rgb(54 59 82 / var(--tw-bg-opacity, 1))}.bg-hytale-light\/50{background-color:rgb(54 59 82 / 0.5)}.bg-hytale-panel{--tw-bg-opacity:1;background-color:rgb(33 37 54 / var(--tw-bg-opacity, 1))}.bg-hytale-panel\/50{background-color:rgb(33 37 54 / 0.5)}.bg-hytale-panel\/80{background-color:rgb(33 37 54 / 0.8)}.bg-hytale-red\/10{background-color:rgb(230 69 83 / 0.1)}.bg-purple-500\/10{background-color:rgb(168 85 247 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-hytale-blue{--tw-gradient-from:#00bfff var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 191 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-hytale-panel{--tw-gradient-from:#212536 var(--tw-gradient-from-position);--tw-gradient-to:rgb(33 37 54 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-purple-500{--tw-gradient-to:rgb(168 85 247 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #a855f7 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#151824\]{--tw-gradient-to:#151824 var(--tw-gradient-to-position)}.to-hytale-gold{--tw-gradient-to:#ffcd4d var(--tw-gradient-to-position)}.to-hytale-green{--tw-gradient-to:#65c44c var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-12{padding:3rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-2{padding-bottom:0.5rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-rpg{font-family:"Cinzel", serif}.font-ui{font-family:"Inter", sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-7xl{font-size:4.5rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-hytale-bg{--tw-text-opacity:1;color:rgb(14 16 25 / var(--tw-text-opacity, 1))}.text-hytale-blue{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.text-hytale-border{--tw-text-opacity:1;color:rgb(74 80 106 / var(--tw-text-opacity, 1))}.text-hytale-diamond{--tw-text-opacity:1;color:rgb(185 242 255 / var(--tw-text-opacity, 1))}.text-hytale-gold{--tw-text-opacity:1;color:rgb(255 205 77 / var(--tw-text-opacity, 1))}.text-hytale-green{--tw-text-opacity:1;color:rgb(101 196 76 / var(--tw-text-opacity, 1))}.text-hytale-red{--tw-text-opacity:1;color:rgb(230 69 83 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-gray-600::placeholder{--tw-placeholder-opacity:1;color:rgb(75 85 99 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.opacity-25{opacity:0.25}.opacity-50{opacity:0.5}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(255\2c 255\2c 255\2c 0\.3\)\]{--tw-shadow:0 0 10px rgba(255,255,255,0.3);--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-glow-diamond{--tw-shadow:0 0 15px rgba(185, 242, 255, 0.4);--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-rpg{--tw-shadow:0 4px 0 0 rgba(0,0,0,0.3);--tw-shadow-colored:0 4px 0 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur{--tw-blur:blur(8px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_2px_2px_rgba\(0\2c 0\2c 0\2c 0\.8\)\]{--tw-drop-shadow:drop-shadow(0 2px 2px rgba(0,0,0,0.8));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-\[0_4px_4px_rgba\(0\2c 0\2c 0\2c 0\.5\)\]{--tw-drop-shadow:drop-shadow(0 4px 4px rgba(0,0,0,0.5));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-1000{transition-duration:1000ms}.duration-500{transition-duration:500ms}.ease-out{transition-timing-function:cubic-bezier(0, 0, 0.2, 1)}.hover\:border-hytale-blue:hover{--tw-border-opacity:1;border-color:rgb(0 191 255 / var(--tw-border-opacity, 1))}.hover\:border-hytale-gold:hover{--tw-border-opacity:1;border-color:rgb(255 205 77 / var(--tw-border-opacity, 1))}.hover\:border-hytale-green:hover{--tw-border-opacity:1;border-color:rgb(101 196 76 / var(--tw-border-opacity, 1))}.hover\:bg-blue-400:hover{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-600:hover{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.hover\:bg-hytale-green\/20:hover{background-color:rgb(101 196 76 / 0.2)}.hover\:bg-hytale-red\/20:hover{background-color:rgb(230 69 83 / 0.2)}.hover\:text-hytale-blue:hover{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.hover\:text-hytale-gold:hover{--tw-text-opacity:1;color:rgb(255 205 77 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-hytale-blue:focus{--tw-border-opacity:1;border-color:rgb(0 191 255 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:translate-y-1:active{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:shadow-none:active{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.group:focus-within .group-focus-within\:text-hytale-blue{--tw-text-opacity:1;color:rgb(0 191 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:rotate-12{--tw-rotate:12deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-50{opacity:0.5}.group:hover .group-hover\:duration-200{transition-duration:200ms}@media (min-width: 768px){.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-8{padding:2rem}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}}</style></head>
 <body class="min-h-screen flex flex-col p-4 md:p-8 max-w-6xl mx-auto justify-center relative font-ui">
 <!-- Guide Modal -->
 <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 hidden backdrop-blur-sm p-4" id="guideModal">
@@ -116,20 +126,20 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <span class="material-symbols-outlined text-3xl">close</span>
 </button>
 <h2 class="text-2xl font-rpg font-bold text-hytale-gold mb-6 border-b-2 border-hytale-border pb-2 flex items-center gap-2">
-<span class="material-symbols-outlined">menu_book</span> Valuator Codex V18
+<span class="material-symbols-outlined">menu_book</span> Valuator Codex V23
             </h2>
 <div class="space-y-5 text-sm text-gray-300">
 <div class="bg-hytale-bg p-3 rounded border border-hytale-border">
-<h3 class="text-hytale-blue font-bold uppercase mb-1 flex items-center gap-2">
-<span class="material-symbols-outlined text-sm js-replaced-missing-icon">radio_button_unchecked</span> Cultural Intelligence
+<h3 class="text-hytale-diamond font-bold uppercase mb-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">diamond</span> Gaming Heritage
                     </h3>
-<p>Known numbers like <strong>404</strong>, <strong>420</strong>, and <strong>1337</strong> are recognized as Cultural Artifacts, granting value despite being numeric.</p>
+<p>Recognizes <strong>Minecraft</strong> &amp; <strong>Hytale</strong> terminology. Cultural icons receive a base bonus (+400) and ignore standard length penalties (Minimum +50 Length Score).</p>
 </div>
 <div class="bg-hytale-bg p-3 rounded border border-hytale-border">
 <h3 class="text-hytale-green font-bold uppercase mb-1 flex items-center gap-2">
 <span class="material-symbols-outlined text-sm">tune</span> Manual Calibration
                     </h3>
-<p>You can now manually <strong>verify</strong> words missing from the codex or <strong>reject</strong> nonsense that "looks" real to correct the score.</p>
+<p>You can manually <strong>verify</strong> words or <strong>reject</strong> nonsense to correct the score.</p>
 </div>
 <div class="grid grid-cols-2 gap-2 text-center text-xs font-bold pt-2">
 <div class="p-2 bg-hytale-gold/10 text-hytale-gold border border-hytale-gold/30 rounded">GOD TIER (900+)</div>
@@ -145,7 +155,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <span class="material-symbols-outlined text-hytale-gold text-xl mt-0.5">warning</span>
 <p class="text-xs text-gray-400 text-left leading-relaxed">
 <strong class="text-hytale-gold block mb-1">Subjective Estimation Warning</strong>
-            This tool provides an algorithmic estimation based on patterns, flow, and common dictionaries. It lacks full context on niche trends, personal value, or rapidly evolving internet culture. <strong>Scores do not represent real-world market value.</strong>
+            This tool provides an algorithmic estimation. It lacks full context on niche trends or real-world market value. <strong>Scores do not represent real-world market value.</strong>
 </p>
 </div>
 <!-- Header -->
@@ -159,7 +169,7 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <div class="flex justify-center items-center gap-2 mt-3">
 <span class="h-px w-12 bg-hytale-border"></span>
 <p class="text-xs md:text-sm text-gray-400 font-bold tracking-[0.2em] uppercase cursor-pointer hover:text-hytale-blue transition-colors flex items-center gap-1" onclick="toggleGuide()">
-<span class="material-symbols-outlined text-sm">info</span> Algorithm V18
+<span class="material-symbols-outlined text-sm">info</span> Algorithm V23
             </p>
 <span class="h-px w-12 bg-hytale-border"></span>
 </div>
@@ -186,46 +196,61 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 <span class="material-symbols-outlined">refresh</span>
 </button>
 </div>
+<div class="flex justify-between items-center mt-1 pt-3 border-t border-white/5">
+<a class="text-[10px] text-hytale-gold hover:text-white transition-colors flex items-center gap-1 uppercase tracking-wider" href="https://x.com/ZacHytale" target="_blank">
+<span class="material-symbols-outlined text-xs">link</span> x.com/ZacHytale
+                        </a>
+
+</div>
 </div>
 </div>
 <!-- Badges & Tools -->
 <div class="flex flex-col gap-4 justify-center transition-all duration-500 opacity-0 scale-95" id="statusBadges">
 <!-- Main Status Row -->
 <div class="flex gap-2 justify-center flex-wrap">
+<div class="hidden px-3 py-1 bg-hytale-bg border border-hytale-diamond text-hytale-diamond text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-glow-diamond" id="gamingBadge">
+<span class="material-symbols-outlined text-sm">diamond</span> Icon
+                    </div>
 <div class="hidden px-3 py-1 bg-hytale-bg border border-hytale-green/50 text-hytale-green text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="dictionaryBadge">
 <span class="material-symbols-outlined text-sm">verified_user</span> Known
-                </div>
+                    </div>
 <div class="hidden px-3 py-1 bg-hytale-bg border border-hytale-gold/50 text-hytale-gold text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="leetBadge">
 <span class="material-symbols-outlined text-sm">translate</span> Leet
-                </div>
+                    </div>
 <div class="hidden px-3 py-1 bg-hytale-bg border border-purple-400/50 text-purple-400 text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="faceBadge">
 <span class="material-symbols-outlined text-sm">face</span> Face
-                </div>
+                    </div>
 <div class="hidden px-3 py-1 bg-hytale-bg border border-hytale-blue/50 text-hytale-blue text-[10px] font-bold uppercase rounded tracking-widest flex items-center gap-1 shadow-lg" id="plausibleBadge">
 <span class="material-symbols-outlined text-sm">lightbulb</span> Plausible
-                </div>
+                    </div>
 </div>
 <!-- User Correction Tools -->
-<div class="flex gap-2 hidden" id="correctionTools">
+<div class="flex flex-col gap-2 hidden" id="correctionTools">
+<div class="text-center text-[9px] text-gray-500 uppercase tracking-widest mb-1">Incorrect Assessment? Calibrate:</div>
+<div class="flex gap-2">
 <button class="flex-1 bg-hytale-green/10 hover:bg-hytale-green/20 border border-hytale-green/40 text-hytale-green text-[10px] font-bold py-2 rounded-sm shadow-rpg active:shadow-none active:translate-y-1 transition-all uppercase tracking-widest flex items-center justify-center gap-2" id="forceVerifyBtn" onclick="overrideDictionary(true)">
 <span class="material-symbols-outlined text-sm">check_circle</span> Is Real Word
-                </button>
+                        </button>
 <button class="flex-1 bg-hytale-red/10 hover:bg-hytale-red/20 border border-hytale-red/40 text-hytale-red text-[10px] font-bold py-2 rounded-sm shadow-rpg active:shadow-none active:translate-y-1 transition-all uppercase tracking-widest flex items-center justify-center gap-2" id="forceRejectBtn" onclick="overrideDictionary(false)">
 <span class="material-symbols-outlined text-sm">cancel</span> No Meaning
-                </button>
+                        </button>
+</div>
 </div>
 </div>
 </div>
 <!-- Right Column: Results -->
 <div class="lg:col-span-7 relative min-h-[400px]">
+<!-- Loader -->
 <div class="absolute inset-0 bg-hytale-bg/80 z-20 flex flex-col items-center justify-center hidden backdrop-blur-sm rounded-sm border border-hytale-border" id="loader">
 <span class="material-symbols-outlined text-5xl text-hytale-blue animate-spin mb-4">settings</span>
 <div class="font-rpg text-xl text-white tracking-widest animate-pulse">Consulting the Oracle...</div>
 </div>
+<!-- Empty State -->
 <div class="h-full flex flex-col items-center justify-center text-gray-600 border-2 border-dashed border-hytale-border rounded-sm bg-hytale-bg/30 p-12" id="emptyState">
 <span class="material-symbols-outlined text-7xl mb-4 opacity-50">search</span>
 <p class="uppercase tracking-widest font-bold text-sm">Awaiting Input Query</p>
 </div>
+<!-- Results -->
 <div class="hidden flex flex-col gap-4" id="results">
 <!-- Score Card -->
 <div class="bg-gradient-to-br from-hytale-panel to-[#151824] border-2 border-hytale-border p-6 rounded-sm shadow-2xl relative overflow-hidden group">
@@ -278,328 +303,415 @@ a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons"
 </div>
 </div>
 <!-- Log -->
-<div class="bg-black/80 border border-hytale-border rounded-sm h-48 overflow-y-auto font-mono text-xs shadow-inner relative">
-<div class="sticky top-0 bg-[#0a0a0f] border-b border-gray-800 p-2 text-gray-500 font-bold flex justify-between items-center z-10">
+<div class="bg-black/80 border border-hytale-border rounded-sm h-48 font-mono text-xs shadow-inner relative flex flex-col">
+<div class="bg-[#0a0a0f] border-b border-gray-800 p-2 text-gray-500 font-bold flex justify-between items-center z-10 shadow-sm">
 <span>&gt; SYSTEM_LOG</span>
 <span class="w-2 h-2 rounded-full bg-hytale-green animate-pulse"></span>
 </div>
-<ul class="space-y-1.5 p-4" id="logList">
+<ul class="space-y-1.5 p-4 overflow-y-auto flex-1" id="logList">
 <!-- Logs -->
 </ul>
 </div>
-<!-- Warning Box Below Log -->
 <div class="bg-hytale-panel/50 border border-hytale-border p-3 rounded mt-2 text-center flex items-center justify-center gap-3 shadow-lg">
 <span class="material-symbols-outlined text-hytale-gold text-lg">warning</span>
 <p class="text-[10px] text-gray-500 text-left leading-tight max-w-md">
 <strong class="text-gray-400">Subjective Estimation Warning:</strong> Scores are algorithmic estimates based on patterns and dictionaries. They lack context on niche trends or real-world market value.
-                </p>
+                    </p>
 </div>
 </div>
 </div>
 </main>
 <script>
-    /*
-     * OG NAME VALUATOR V18.0
-     * Added Manual Dictionary Override functionality (Verify/Reject).
-     */
+        /*
+         * OG NAME VALUATOR V23.0
+         * Features: Massive Gaming/Minecraft Dictionary Expansion, Manual Calibration, Symbol Logic.
+         */
 
-    // Configuration
-    const LETTER_WEIGHTS = { 'a':10,'e':10,'o':10,'c':9,'u':9,'s':8,'i':8,'n':8,'r':8,'l':8,'d':7,'b':7,'p':7,'m':7,'t':7,'g':6,'h':6,'f':5,'y':5,'v':5,'k':4,'w':3,'z':4,'x':3,'q':2,'j':3 };
-    const DIGIT_WEIGHTS = { '0':10,'1':9,'7':8,'3':5,'2':5,'4':4,'5':4,'6':6,'8':5,'9':6 };
-    const LEET_MAP = { '0':'o','1':'i','3':'e','4':'a','5':'s','6':'g','7':'t','8':'b','@':'a','$':'s' };
-    const EMOTICONS_STRICT = ["u_u","o_o","t_t","x_x","v_v","^_^","-_-",">_<",":)",":(",":d",":p","xd","uwu","owo","n_n"];
-    
-    // Famous Numbers
-    const CULTURAL_NUMBERS = {
-        "404": "Error Code (Not Found)", "200": "Status Code (OK)", "500": "Server Error",
-        "420": "Cultural Number", "69": "Cultural Number", "666": "Symbolic Number",
-        "777": "Jackpot / Lucky", "360": "Geometry / Gaming", "247": "24/7",
-        "911": "Emergency", "1337": "Leet Speak Elite"
-    };
-
-    const OG_DICTIONARY = new Set([
-        "ana","zac","leo","max","kai","zoe","ivy","amy","dan","ben","sam","tom","bob","tim","roy","ray","jay","mia","ava","paz","luz","sol","mar","rio","sky","red","blu","neo","ash","lux","rex","fox","god","bat","cat","dog","rat","pig","cow","fly","bee","ant","owl","ape","sun","sea","ice","oil","air","fire","gem","orb","arc","bow","axe","gun","war","win","top","bot","mid","adc","sup","run","joy","sad","bad","ace","one","two","six","ten","dad","mom","sis","bro","sir","mad","pro","noob","npc","mob","hp","mp","xp","gg","wp","gl","hf","ez","dark","cool","best","king","lord","duke","hero","evil","love","hate","soul","mind","body","head","hand","foot","eye","ear","nose","face","gold","iron","wood","rock","sand","dust","wind","rain","snow","star","moon","void","null","zero","luna","nova","halo","angel","devil","wolf","bear","lion","tiger","fish","bird","duck","swan","crow","hawk","kite","bush","bramble","tree","leaf","grass","root","seed","rose","lily","ruby","opal","jade","onyx","doom","fury","rage","hope","wish","luck","level","radar","kayak","civic","cloud","storm","magic","power","alpha","omega","night","light","dream","ghost","witch","blade","sword","arrow","spear","happy","funny","sweet","fresh","clean","swift","royal","grand","noble"
-    ]);
-
-    // Manual Overrides
-    const USER_VERIFIED = new Set();
-    const USER_REJECTED = new Set();
-
-    const isVowel = (c) => c && ['a','e','i','o','u','y'].includes(c.toLowerCase());
-    const getUniquenessEntropy = (str) => { let val=0; for(let i=0;i<str.length;i++) val+=str.charCodeAt(i)*(i+1); return (val%10000)/10000; };
-
-    // UI & Logic
-    const log = (msg, type='neutral', points=0) => {
-        const list = document.getElementById('logList');
-        const li = document.createElement('li');
-        let colorClass = 'text-gray-400'; let icon = '>';
-        if (type === 'good') { colorClass = 'text-hytale-green'; icon = '+'; }
-        if (type === 'bad') { colorClass = 'text-hytale-red'; icon = '-'; }
-        if (type === 'info') { colorClass = 'text-hytale-blue'; icon = 'i'; }
-        const pointSpan = points !== 0 ? `<span class="${points > 0 ? 'text-hytale-green' : 'text-hytale-red'} ml-auto pl-2 font-bold">${points > 0 ? '+' : ''}${points}</span>` : '';
-        li.className = `flex items-start pb-1 animate-pulse-once ${colorClass}`;
-        li.innerHTML = `<span class="mr-2 opacity-50 font-mono">[${icon}]</span><span class="flex-1 break-all">${msg}</span>${pointSpan}`;
-        list.appendChild(li); 
-        list.parentElement.scrollTop = list.parentElement.scrollHeight;
-    };
-
-    const toggleGuide = () => document.getElementById('guideModal').classList.toggle('hidden');
-    
-    const exportSource = () => {
-        const htmlContent = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
-        const blob = new Blob([htmlContent], { type: 'text/html' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a'); a.href = url; a.download = 'hytale-valuator-v18.html';
-        document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url);
-    };
-
-    const animateCount = (id, target) => {
-        const el = document.getElementById(id); const duration = 1000; let startTime = null;
-        const step = (timestamp) => {
-            if (!startTime) startTime = timestamp; const progress = Math.min((timestamp - startTime) / duration, 1);
-            const ease = 1 - Math.pow(1 - progress, 4); el.innerText = Math.floor(ease * target);
-            if (progress < 1) window.requestAnimationFrame(step); else el.innerText = target.toFixed(0);
-        }; window.requestAnimationFrame(step);
-    };
-
-    // Override Action
-    function overrideDictionary(isValid) {
-        const input = document.getElementById('nameInput').value.trim().toLowerCase();
-        if(!input) return;
+        // Configuration
+        const LETTER_WEIGHTS = { 
+            'a':10,'e':9,'o':10,'c':9,'u':9,
+            's':8,'i':8,'n':8,'r':7,'l':8,'d':7,'b':9,'p':8,'m':7,'t':7,
+            'g':6,'h':6,'f':5,'y':5,'v':5,
+            'k':4,'w':3,'z':4,'x':3,'q':2,'j':3 
+        };
         
-        if (isValid) {
-            USER_VERIFIED.add(input);
-            USER_REJECTED.delete(input);
-            log(`Manual Override: "${input}" registered in Codex.`, 'good');
-        } else {
-            USER_REJECTED.add(input);
-            USER_VERIFIED.delete(input);
-            log(`Manual Override: "${input}" marked as Nonsense.`, 'bad');
-        }
+        const DIGIT_WEIGHTS = { '0':10,'1':9,'7':8,'3':5,'2':5,'4':4,'5':4,'6':6,'8':5,'9':6 };
         
-        // Re-run analysis
-        calculateScore();
-    }
-
-    function calculateScore() {
-        const input = document.getElementById('nameInput').value.trim();
-        if (!input) return;
-        document.getElementById('emptyState').classList.add('hidden');
-        document.getElementById('results').classList.remove('hidden');
-        document.getElementById('loader').classList.remove('hidden');
-        document.getElementById('logList').innerHTML = '';
+        // Leet Map - 1 handled specially in logic
+        const LEET_MAP = { '0':'o','3':'e','4':'a','5':'s','6':'g','7':'t','8':'b','@':'a','$':'s' };
         
-        const badgeContainer = document.getElementById('statusBadges');
-        badgeContainer.classList.remove('opacity-100', 'scale-100'); badgeContainer.classList.add('opacity-0', 'scale-95');
+        const EMOTICONS_STRICT = ["u_u","o_o","t_t","x_x","v_v","^_^","-_-",">_<",":)",":(",":d",":p","xd","uwu","owo","n_n"];
         
-        // Hide all indicators including buttons
-        ['dictionaryBadge', 'leetBadge', 'faceBadge', 'plausibleBadge', 'correctionTools'].forEach(id => document.getElementById(id).classList.add('hidden'));
+        const CULTURAL_NUMBERS = {
+            "404": "Error Code (Not Found)", "200": "Status Code (OK)", "500": "Server Error",
+            "420": "Cultural Number", "69": "Cultural Number", "666": "Symbolic Number",
+            "777": "Jackpot / Lucky", "360": "Geometry / Gaming", "247": "24/7",
+            "911": "Emergency", "1337": "Leet Speak Elite"
+        };
 
-        setTimeout(() => {
-            try {
-                performAnalysis(input);
-                badgeContainer.classList.remove('hidden');
-                setTimeout(() => { badgeContainer.classList.remove('opacity-0', 'scale-95'); badgeContainer.classList.add('opacity-100', 'scale-100'); }, 100);
-            } catch(e) { console.error(e); log("SYSTEM ERROR: Calculation failed.", 'bad'); } 
-            finally { document.getElementById('loader').classList.add('hidden'); }
-        }, 600);
-    }
+        // MC & Hytale Icons - High value items/entities
+        const GAMING_ICONS = new Set([
+            "herobrine", "notch", "jeb", "dinnerbone", "steve", "alex", "creeper", "zombie", "skeleton", "spider", "enderman", "enderdragon", "wither", "piglin", "villager", "golem", "warden", "axolotl", "bee", "fox", "cat", "dog", "wolf", "ocelot", "ghast", "blaze", "slime", "magmacube", "shulker", "phantom", "ravager", "hoglin", "zoglin", "strider", "allay", "frog", "tadpole", "sniffer", "camel",
+            "dirt", "stone", "cobblestone", "wood", "plank", "sand", "gravel", "ore", "coal", "iron", "gold", "diamond", "emerald", "lapis", "redstone", "obsidian", "bedrock", "tnt", "torch", "chest", "furnace", "crafting", "anvil", "enchant", "potion", "beacon", "conduit", "sculk",
+            "pickaxe", "sword", "axe", "shovel", "hoe", "bow", "arrow", "crossbow", "trident", "shield", "elytra", "totem", "bucket", "water", "lava", "milk",
+            "nether", "end", "aether", "overworld", "biome", "spawn", "base", "home", "pvp", "grief", "raid", "faction", "skyblock", "bedwars", "hypixel", "mineplex",
+            "hytale", "kweebec", "varyn", "gaia", "orbis", "feran", "trork", "mosshorn", "scarak", "slothian", "outlander", "void", "element", "mana", "magic", "dungeon", "prefabs",
+            "god", "king", "lord", "pro", "hacker", "admin", "mod", "owner", "leader", "legend", "myth", "beast", "ghost", "soul", "dark", "light"
+        ]);
 
-    function performAnalysis(originalName) {
-        const name = originalName.toLowerCase();
-        const len = name.length;
-        let score = 0;
-        let aestheticPoints = 0; let flowPoints = 0; let realismPoints = 0;
+        const OG_DICTIONARY = new Set([
+            "ana","zac","leo","max","kai","zoe","ivy","amy","dan","ben","sam","tom","bob","tim","roy","ray","jay","mia","ava","paz","luz","sol","mar","rio","sky","red","blu","blue","neo","ash","lux","rex","fox","bat","rat","pig","cow","fly","ant","owl","ape","sun","sea","ice","oil","air","fire","gem","orb","arc","run","joy","sad","bad","ace","one","two","six","ten","dad","mom","sis","bro","sir","mad","noob","npc","mob","hp","mp","xp","gg","wp","gl","hf","ez","cool","best","duke","hero","evil","love","hate","mind","body","head","hand","foot","eye","ear","nose","face","wind","rain","snow","star","moon","null","zero","luna","nova","halo","angel","devil","lion","tiger","fish","bird","duck","swan","crow","hawk","kite","bush","bramble","tree","leaf","grass","root","seed","rose","lily","ruby","opal","jade","onyx","doom","fury","rage","hope","wish","luck","level","radar","kayak","civic","cloud","storm","power","alpha","omega","night","dream","witch","blade","spear","happy","funny","sweet","fresh","clean","swift","royal","grand","noble"
+        ]);
 
-        log(`Analyzing Rune: "${originalName}"`);
+        const USER_VERIFIED = new Set();
+        const USER_REJECTED = new Set();
 
-        // --- PREP ---
-        const isNumeric = /^\d+$/.test(name);
-        const digitCount = (name.match(/\d/g) || []).length;
+        const isVowel = (c) => c && ['a','e','i','o','u','y'].includes(c.toLowerCase());
+        const getUniquenessEntropy = (str) => { let val=0; for(let i=0;i<str.length;i++) val+=str.charCodeAt(i)*(i+1); return (val%10000)/10000; };
+
+        // UI & Logic
+        const log = (msg, type='neutral', points=0) => {
+            const list = document.getElementById('logList');
+            const li = document.createElement('li');
+            let colorClass = 'text-gray-400'; let icon = '>';
+            if (type === 'good') { colorClass = 'text-hytale-green'; icon = '+'; }
+            if (type === 'bad') { colorClass = 'text-hytale-red'; icon = '-'; }
+            if (type === 'info') { colorClass = 'text-hytale-blue'; icon = 'i'; }
+            const pointSpan = points !== 0 ? `<span class="${points > 0 ? 'text-hytale-green' : 'text-hytale-red'} ml-auto pl-2 font-bold">${points > 0 ? '+' : ''}${points}</span>` : '';
+            li.className = `flex items-start pb-1 animate-pulse-once ${colorClass}`;
+            li.innerHTML = `<span class="mr-2 opacity-50 font-mono">[${icon}]</span><span class="flex-1 break-all">${msg}</span>${pointSpan}`;
+            list.appendChild(li); 
+            list.parentElement.scrollTop = list.parentElement.scrollHeight;
+        };
+
+        const toggleGuide = () => document.getElementById('guideModal').classList.toggle('hidden');
         
-        let phoneticName = name;
-        let isLeetTranslated = false;
-        if (!isNumeric && digitCount > 0 && digitCount <= 2) {
-            phoneticName = name.split('').map(char => LEET_MAP[char] || char).join('');
-            isLeetTranslated = name !== phoneticName;
-        }
-        if(isLeetTranslated) log(`Phonetic Echo: "${phoneticName}"`, 'info');
 
-        const isAlpha = /^[a-z]+$/.test(name);
-        const isStrictEmoticon = EMOTICONS_STRICT.includes(name);
-        const isHalfEmoticon = (len === 3 && name[1] === '_' && !isStrictEmoticon && /[a-z0-9]/.test(name[0]) && /[a-z0-9]/.test(name[2]));
+        const animateCount = (id, target) => {
+            const el = document.getElementById(id); const duration = 1000; let startTime = null;
+            const step = (timestamp) => {
+                if (!startTime) startTime = timestamp; const progress = Math.min((timestamp - startTime) / duration, 1);
+                const ease = 1 - Math.pow(1 - progress, 4); el.innerText = Math.floor(ease * target);
+                if (progress < 1) window.requestAnimationFrame(step); else el.innerText = target.toFixed(0);
+            }; window.requestAnimationFrame(step);
+        };
 
-        // 1. BASE CATEGORY
-        if (isStrictEmoticon) {
-            score = 650; log("Category: Iconic Emoticon", 'good', 650);
-            aestheticPoints += 100; flowPoints += 100; realismPoints += 100;
-        } 
-        else if (isHalfEmoticon) {
-            score = 450; log("Category: Expression (Face)", 'info', 450);
-            document.getElementById('faceBadge').classList.remove('hidden');
-            aestheticPoints += 60; realismPoints += 50; 
-        }
-        else if (isAlpha) {
-            score = 250; log("Category: Pure Alphabetic", 'good', 250);
-        } 
-        else if (isNumeric) {
-            score = 100; log("Category: Pure Numeric", 'neutral', 100);
-        } 
-        else {
-            if (isLeetTranslated && /^[a-z0-9]+$/.test(name)) {
-                score = 150; log("Category: Leet Structure", 'neutral', 150);
-            } else {
-                score = 50; log("Category: Mixed/Chaos", 'bad', 50);
-            }
-        }
-
-        // 2. LENGTH MODIFIER
-        let lengthBonus = 0;
-        if (len === 3) lengthBonus = 350; 
-        else if (len === 2) lengthBonus = 320; 
-        else if (len === 4) lengthBonus = 250; 
-        else if (len === 5) lengthBonus = 180; 
-        else if (len === 6) lengthBonus = 120;
-        else if (len > 6) lengthBonus = -((len-6) * 30);
-        score += lengthBonus;
-        if(lengthBonus !== 0) log(`Length Scarcity (${len})`, lengthBonus > 0 ? 'good' : 'bad', lengthBonus);
-
-        // 3. VISUAL AESTHETICS
-        let visualSum = 0;
-        if (isStrictEmoticon) visualSum = 50; 
-        else {
-            for (let char of name) {
-                if (isNumeric) visualSum += (DIGIT_WEIGHTS[char] || 5);
-                else visualSum += (LETTER_WEIGHTS[char] || 5);
-            }
-        }
-        let avgVisual = len > 0 ? (visualSum / len) : 0;
-        let calculatedAestheticScore = Math.floor(avgVisual * 10);
-        score += calculatedAestheticScore; aestheticPoints += calculatedAestheticScore;
-        log("Visual Composition", 'good', calculatedAestheticScore);
-
-        // 4. REALISM & CULTURE
-        if (!isStrictEmoticon && !isHalfEmoticon) {
+        // Override Action
+        function overrideDictionary(isValid) {
+            const input = document.getElementById('nameInput').value.trim().toLowerCase();
+            if(!input) return;
             
-            // MANUAL OVERRIDE CHECK
-            if (USER_REJECTED.has(name)) {
-                log("Override: Structure Rejected by User", 'bad');
-                realismPoints -= 50;
-                score -= 50;
-                // Show tools again to undo
-                document.getElementById('correctionTools').classList.remove('hidden');
+            if (isValid) {
+                USER_VERIFIED.add(input);
+                USER_REJECTED.delete(input);
+                log(`Manual Override: "${input}" verified.`, 'good');
+            } else {
+                USER_REJECTED.add(input);
+                USER_VERIFIED.delete(input);
+                log(`Manual Override: "${input}" rejected.`, 'bad');
             }
-            else if (OG_DICTIONARY.has(name) || USER_VERIFIED.has(name)) {
-                let dictBonus = 250; realismPoints += dictBonus; score += dictBonus;
-                const src = USER_VERIFIED.has(name) ? "Manual Override" : "Verified Word";
-                log(`Dictionary: ${src}`, 'good', dictBonus);
-                document.getElementById('dictionaryBadge').innerHTML = '<span class="material-symbols-outlined text-sm">verified_user</span> Known';
-                document.getElementById('dictionaryBadge').classList.remove('hidden');
-                // Show reject button
-                document.getElementById('correctionTools').classList.remove('hidden');
-            } 
-            else if (isLeetTranslated && OG_DICTIONARY.has(phoneticName)) {
-                let dictBonus = 200; realismPoints += dictBonus; score += dictBonus;
-                log(`Dictionary: Leet Match ("${phoneticName}")`, 'good', dictBonus);
-                document.getElementById('leetBadge').classList.remove('hidden');
-                document.getElementById('dictionaryBadge').classList.remove('hidden');
-            } 
-            else if (isNumeric && CULTURAL_NUMBERS[name]) {
-                let cultBonus = 250; realismPoints += cultBonus; score += cultBonus;
-                log(`Culture: ${CULTURAL_NUMBERS[name]}`, 'good', cultBonus);
-                document.getElementById('dictionaryBadge').innerText = "FAMOUS";
-                document.getElementById('dictionaryBadge').classList.remove('hidden');
+            
+            // Re-run analysis
+            calculateScore(true);
+        }
+
+        function calculateScore(skipReset = false) {
+            const input = document.getElementById('nameInput').value.trim();
+            if (!input) return;
+            document.getElementById('emptyState').classList.add('hidden');
+            document.getElementById('results').classList.remove('hidden');
+            document.getElementById('loader').classList.remove('hidden');
+            document.getElementById('logList').innerHTML = '';
+            
+            const badgeContainer = document.getElementById('statusBadges');
+            
+            if (!skipReset) {
+                badgeContainer.classList.remove('opacity-100', 'scale-100'); 
+                badgeContainer.classList.add('opacity-0', 'scale-95');
+                ['dictionaryBadge', 'leetBadge', 'faceBadge', 'plausibleBadge', 'correctionTools', 'gamingBadge'].forEach(id => document.getElementById(id).classList.add('hidden'));
             }
-            else {
-                let vowels = 0; for(let char of phoneticName) if(isVowel(char)) vowels++;
-                if (vowels > 0 && len > 1) {
-                    let plausBonus = 120; realismPoints += plausBonus; score += plausBonus;
-                    log("Structure: Plausible", 'info', plausBonus);
-                    document.getElementById('plausibleBadge').classList.remove('hidden');
-                    
-                    // Show force verify/reject buttons for plausible words
-                    document.getElementById('correctionTools').classList.remove('hidden');
+
+            setTimeout(() => {
+                try {
+                    performAnalysis(input);
+                    badgeContainer.classList.remove('hidden');
+                    setTimeout(() => { badgeContainer.classList.remove('opacity-0', 'scale-95'); badgeContainer.classList.add('opacity-100', 'scale-100'); }, 100);
+                } catch(e) { console.error(e); log("SYSTEM ERROR: Calculation failed.", 'bad'); } 
+                finally { document.getElementById('loader').classList.add('hidden'); }
+            }, 600);
+        }
+
+        function performAnalysis(originalName) {
+            const name = originalName.toLowerCase();
+            const len = name.length;
+            let score = 0;
+            let aestheticPoints = 0; let flowPoints = 0; let realismPoints = 0;
+
+            log(`Analyzing Rune: "${originalName}"`);
+
+            // --- PREP & CHECKS ---
+            const isNumeric = /^\d+$/.test(name);
+            const digitCount = (name.match(/\d/g) || []).length;
+            // Pure symbol: only underscores, dashes, dots
+            const isPureSymbol = /^[_.\-]+$/.test(name);
+
+            // Intelligent Leet Logic (Updated to handle '1' -> 'i' OR 'l')
+            let phoneticNames = [];
+            let isLeetTranslated = false;
+
+            // If not pure numeric, and has few digits, try to translate
+            if (!isNumeric && digitCount > 0 && digitCount <= 2 && !isPureSymbol) {
+                const basePhonetic = name.split('').map(char => LEET_MAP[char] || char).join('');
+                
+                // If the name had '1', we generate two candidates: 1->i (default map) and 1->l
+                if (name.includes('1')) {
+                    phoneticNames.push(basePhonetic); 
+                    const altPhonetic = name.split('').map(char => {
+                        if (char === '1') return 'l';
+                        return LEET_MAP[char] || char;
+                    }).join('');
+                    phoneticNames.push(altPhonetic);
                 } else {
-                    log("Structure: Unlikely/Abstract", 'bad', 0);
-                    // Show force verify button in case algorithm missed it
-                    document.getElementById('correctionTools').classList.remove('hidden');
+                    phoneticNames.push(basePhonetic);
+                }
+                isLeetTranslated = true;
+            } else {
+                phoneticNames.push(name);
+            }
+
+            // Pick best phonetic match (if any is in dictionary, prefer that)
+            let bestPhonetic = phoneticNames[0];
+            let foundInDict = false;
+            let foundInGaming = false;
+            
+            for (let p of phoneticNames) {
+                if (GAMING_ICONS.has(p)) {
+                    bestPhonetic = p;
+                    foundInGaming = true;
+                    break;
+                }
+                if (OG_DICTIONARY.has(p)) {
+                    bestPhonetic = p;
+                    foundInDict = true;
                 }
             }
-        }
+            
+            if(isLeetTranslated) log(`Phonetic Echo: "${bestPhonetic}"`, 'info');
 
-        // 5. FLOW
-        let calculatedFlowScore = 0;
-        if (isNumeric) {
-             const isRepetitive = /^(\d)\1+$/.test(name);
-             if(isRepetitive) { calculatedFlowScore = 150; log("Pattern: Repetition", 'good', 150); }
-             // Small penalty for non-famous non-repeating numbers
-             else if(!CULTURAL_NUMBERS[name] && len > 1) { calculatedFlowScore = -50; }
-        } 
-        else if (!isStrictEmoticon && !isHalfEmoticon) {
-            let cvcBonus = 0;
-            for (let i = 1; i < len; i++) {
-                let prevV = isVowel(phoneticName[i-1]); let currV = isVowel(phoneticName[i]);
-                if (prevV !== currV) cvcBonus += 25; 
+            const isAlpha = /^[a-z]+$/.test(name);
+            const isStrictEmoticon = EMOTICONS_STRICT.includes(name);
+            const isHalfEmoticon = (len === 3 && name[1] === '_' && !isStrictEmoticon && /[a-z0-9]/.test(name[0]) && /[a-z0-9]/.test(name[2]));
+
+            const isCultural = foundInGaming || GAMING_ICONS.has(name) || CULTURAL_NUMBERS[name];
+
+            // 1. BASE CATEGORY
+            if (isStrictEmoticon) {
+                score = 650; log("Category: Iconic Emoticon", 'good', 650);
+                aestheticPoints += 100; flowPoints += 100; realismPoints += 100;
+            } 
+            else if (isHalfEmoticon) {
+                score = 450; log("Category: Expression (Face)", 'info', 450);
+                document.getElementById('faceBadge').classList.remove('hidden');
+                aestheticPoints += 60; realismPoints += 50; 
             }
-            const reverse = name.split('').reverse().join('');
-            if (name === reverse && len > 1) { cvcBonus += 40; log("Symmetry: Palindrome", 'good', 40); }
+            else if (isPureSymbol) {
+                const uniqueChars = new Set(name).size;
+                const isRepeating = uniqueChars === 1; // "___"
+                const isSymmetric = name === name.split('').reverse().join(''); // "_-_"
 
-            let vowels = 0; for(let char of phoneticName) if(isVowel(char)) vowels++;
-            if (vowels === 0 && len > 1 && !isNumeric) {
-                calculatedFlowScore = -100; log("Flow: Consonant Lock", 'bad', -100);
+                if (isRepeating) {
+                    score = 550; // God Tier Symbol Base
+                    log("Category: Repeating Symbol (Rare)", 'good', 550);
+                    aestheticPoints += 150;
+                } else if (isSymmetric) {
+                    score = 300; // Mid
+                    log("Category: Symmetric Symbol Pattern", 'neutral', 300);
+                    aestheticPoints += 50;
+                } else {
+                    score = 50; // Trash
+                    log("Category: Random Symbol Noise", 'bad', 50);
+                }
+            }
+            else if (isAlpha) {
+                score = 250; log("Category: Pure Alphabetic", 'good', 250);
+            } 
+            else if (isNumeric) {
+                score = 150; 
+                log("Category: Pure Numeric", 'neutral', 150);
+            } 
+            else {
+                if (isLeetTranslated && /^[a-z0-9]+$/.test(name)) {
+                    score = 150; log("Category: Leet Structure", 'neutral', 150);
+                } else {
+                    score = 50; log("Category: Mixed/Chaos", 'bad', 50);
+                }
+            }
+
+            // 2. LENGTH MODIFIER
+            let lengthBonus = 0;
+            if (len === 3) lengthBonus = 350; 
+            else if (len === 2) lengthBonus = 320; 
+            else if (len === 4) lengthBonus = 250; 
+            else if (len === 5) lengthBonus = 180; 
+            else if (len === 6) lengthBonus = 120;
+            else if (len > 6) lengthBonus = -((len-6) * 30);
+            
+            // Cultural Immunity Logic: Waive length penalty AND give minimum +50 for icons
+            if (isCultural) {
+                if (lengthBonus < 50) {
+                    lengthBonus = 50; // Force minimum +50 for icons like "Herobrine"
+                    log("Length: Icon Immunity Applied (+50 Min)", 'good', 50);
+                } else {
+                    log(`Length: Scarcity Bonus (${len})`, 'good', lengthBonus);
+                }
             } else {
-                calculatedFlowScore = cvcBonus; if(cvcBonus > 0) log("Flow: Phonetic Rhythm", 'good', cvcBonus);
+                if(lengthBonus !== 0) log(`Length: Scarcity (${len})`, lengthBonus > 0 ? 'good' : 'bad', lengthBonus);
             }
+            
+            score += lengthBonus;
+
+            // 3. VISUAL AESTHETICS
+            let visualSum = 0;
+            if (isStrictEmoticon || isPureSymbol) visualSum = 50; 
+            else {
+                for (let char of name) {
+                    if (isNumeric) visualSum += (DIGIT_WEIGHTS[char] || 5);
+                    else visualSum += (LETTER_WEIGHTS[char] || 5);
+                }
+            }
+            let avgVisual = len > 0 ? (visualSum / len) : 0;
+            let calculatedAestheticScore = Math.floor(avgVisual * 10);
+            score += calculatedAestheticScore; aestheticPoints += calculatedAestheticScore;
+            log("Visual Composition", 'good', calculatedAestheticScore);
+
+            // 4. REALISM & CULTURE
+            if (!isStrictEmoticon && !isHalfEmoticon) {
+                // MANUAL REJECT
+                if (USER_REJECTED.has(name)) {
+                    log("Override: Rejected Meaning", 'bad');
+                    realismPoints = 0; score -= 150; 
+                    document.getElementById('correctionTools').classList.remove('hidden');
+                }
+                // Hytale/MC Icons (Primary)
+                else if (GAMING_ICONS.has(name) || foundInGaming) {
+                    let cultBonus = 400; // +400 for Icons
+                    realismPoints += cultBonus; score += cultBonus;
+                    log(`Culture: Gaming Legend (${originalName})`, 'good', cultBonus);
+                    document.getElementById('gamingBadge').classList.remove('hidden');
+                    document.getElementById('correctionTools').classList.remove('hidden');
+                }
+                // Dictionary Check
+                else if (OG_DICTIONARY.has(name) || USER_VERIFIED.has(name)) {
+                    let dictBonus = 250; realismPoints += dictBonus; score += dictBonus;
+                    const src = USER_VERIFIED.has(name) ? "Manual Override" : "Verified Word";
+                    log(`Dictionary: ${src}`, 'good', dictBonus);
+                    document.getElementById('dictionaryBadge').innerHTML = '<span class="material-symbols-outlined text-sm">verified_user</span> Known';
+                    document.getElementById('dictionaryBadge').classList.remove('hidden');
+                    document.getElementById('correctionTools').classList.remove('hidden');
+                } 
+                // Leet Dictionary Check
+                else if (isLeetTranslated && foundInDict) {
+                    let dictBonus = 200; realismPoints += dictBonus; score += dictBonus;
+                    log(`Dictionary: Leet Match ("${bestPhonetic}")`, 'good', dictBonus);
+                    document.getElementById('leetBadge').classList.remove('hidden');
+                    document.getElementById('dictionaryBadge').classList.remove('hidden');
+                    document.getElementById('correctionTools').classList.remove('hidden');
+                } 
+                // Famous Number
+                else if (isNumeric && CULTURAL_NUMBERS[name]) {
+                    let cultBonus = 250; realismPoints += cultBonus; score += cultBonus;
+                    log(`Culture: ${CULTURAL_NUMBERS[name]}`, 'good', cultBonus);
+                    document.getElementById('dictionaryBadge').innerText = "FAMOUS";
+                    document.getElementById('dictionaryBadge').classList.remove('hidden');
+                }
+                // Plausibility
+                else if (!isPureSymbol) {
+                    let vowels = 0; for(let char of bestPhonetic) if(isVowel(char)) vowels++;
+                    if (vowels > 0 && len > 1) {
+                        let plausBonus = 120; realismPoints += plausBonus; score += plausBonus;
+                        log("Structure: Plausible", 'info', plausBonus);
+                        document.getElementById('plausibleBadge').classList.remove('hidden');
+                        document.getElementById('correctionTools').classList.remove('hidden');
+                    } else {
+                        log("Structure: Unlikely/Abstract", 'bad', 0);
+                        document.getElementById('correctionTools').classList.remove('hidden');
+                    }
+                }
+            }
+
+            // 5. FLOW
+            let calculatedFlowScore = 0;
+            if (isNumeric) {
+                 const isRepetitive = /^(\d)\1+$/.test(name);
+                 if(isRepetitive) { calculatedFlowScore = 150; log("Pattern: Repetition", 'good', 150); }
+                 else if(!CULTURAL_NUMBERS[name] && len > 1) { calculatedFlowScore = -50; }
+            } 
+            else if (!isStrictEmoticon && !isHalfEmoticon && !isPureSymbol) {
+                let cvcBonus = 0;
+                // CVC on phonetic
+                for (let i = 1; i < len; i++) {
+                    let prevV = isVowel(bestPhonetic[i-1]); let currV = isVowel(bestPhonetic[i]);
+                    if (prevV !== currV) cvcBonus += 25; 
+                }
+                const reverse = name.split('').reverse().join('');
+                if (name === reverse && len > 1) { cvcBonus += 40; log("Symmetry: Palindrome", 'good', 40); }
+
+                let vowels = 0; for(let char of bestPhonetic) if(isVowel(char)) vowels++;
+                if (vowels === 0 && len > 1 && !isNumeric) {
+                    calculatedFlowScore = -100; log("Flow: Consonant Lock", 'bad', -100);
+                } else {
+                    calculatedFlowScore = cvcBonus; if(cvcBonus > 0) log("Flow: Phonetic Rhythm", 'good', cvcBonus);
+                }
+            }
+            score += calculatedFlowScore; flowPoints += calculatedFlowScore;
+
+            // 6. DIRT
+            let dirt = 0;
+            if (name.includes('_') && !isStrictEmoticon && !isHalfEmoticon && !isPureSymbol) { score -= 100; log("Cleanliness: Underscore", 'bad', -100); }
+            if (/[0-9]/.test(name) && /[a-z]/.test(name) && !isHalfEmoticon) {
+                if (isLeetTranslated && (foundInDict || foundInGaming)) { dirt += 20; log("Cleanliness: Leet (Minor)", 'info', -20); }
+                else { dirt += 50; log("Cleanliness: Mixed (Major)", 'bad', -50); }
+            }
+            score -= dirt;
+
+            // 7. FINALIZE
+            const entropy = getUniquenessEntropy(originalName);
+            score += entropy;
+            score = Math.max(0, Math.min(1000, score));
+
+            animateCount("mainScore", score);
+            document.getElementById('entropyHash').textContent = entropy.toFixed(6);
+            document.getElementById('progressBar').style.width = `${(score/1000)*100}%`;
+            document.getElementById('aestheticsScore').textContent = aestheticPoints > 0 ? `+${aestheticPoints}` : aestheticPoints;
+            document.getElementById('flowScore').textContent = flowPoints > 0 ? `+${flowPoints}` : flowPoints;
+            document.getElementById('realismScore').textContent = realismPoints > 0 ? `+${realismPoints}` : realismPoints;
+            updateTheme(score);
         }
-        score += calculatedFlowScore; flowPoints += calculatedFlowScore;
 
-        // 6. DIRT
-        let dirt = 0;
-        if (name.includes('_') && !isStrictEmoticon && !isHalfEmoticon) { score -= 100; log("Cleanliness: Underscore", 'bad', -100); }
-        if (/[0-9]/.test(name) && /[a-z]/.test(name) && !isHalfEmoticon) {
-            if (isLeetTranslated && OG_DICTIONARY.has(phoneticName)) { dirt += 20; log("Cleanliness: Leet (Minor)", 'info', -20); }
-            else { dirt += 50; log("Cleanliness: Mixed (Major)", 'bad', -50); }
+        function updateTheme(score) {
+            const scoreTxt = document.getElementById('mainScore'); const bar = document.getElementById('progressBar'); const tierLbl = document.getElementById('tierLabel');
+            let tierName = "TRASH"; let colorClass = "text-hytale-red"; let bgClass = "bg-hytale-red"; let borderClass = "border-hytale-red";
+
+            if (score >= 900) { tierName = "GOD TIER"; colorClass = "text-hytale-gold"; bgClass = "bg-hytale-gold"; borderClass = "border-hytale-gold"; scoreTxt.classList.add('text-magic'); } 
+            else if (score >= 750) { tierName = "VALID OG"; colorClass = "text-hytale-green"; bgClass = "bg-hytale-green"; borderClass = "border-hytale-green"; scoreTxt.classList.remove('text-magic'); } 
+            else if (score >= 600) { tierName = "SEMI OG"; colorClass = "text-purple-400"; bgClass = "bg-purple-400"; borderClass = "border-purple-400"; scoreTxt.classList.remove('text-magic'); } 
+            else if (score >= 500) { tierName = "UNCOMMON"; colorClass = "text-hytale-blue"; bgClass = "bg-hytale-blue"; borderClass = "border-hytale-blue"; scoreTxt.classList.remove('text-magic'); } 
+            else if (score >= 350) { tierName = "COMMON"; colorClass = "text-gray-400"; bgClass = "bg-gray-400"; borderClass = "border-gray-400"; scoreTxt.classList.remove('text-magic'); }
+            else { scoreTxt.classList.remove('text-magic'); }
+
+            tierLbl.textContent = tierName;
+            tierLbl.className = `inline-block px-3 py-1 bg-hytale-bg border ${borderClass} ${colorClass} text-xs font-bold font-rpg uppercase rounded shadow-sm transition-all duration-500`;
+            scoreTxt.className = `text-7xl md:text-8xl font-black font-rpg drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)] transition-colors duration-500 ${score >= 900 ? 'text-legendary' : colorClass}`;
+            bar.className = `h-full w-0 transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(255,255,255,0.2)] ${bgClass}`;
         }
-        score -= dirt;
 
-        // 7. FINALIZE
-        const entropy = getUniquenessEntropy(originalName);
-        score += entropy;
-        score = Math.max(0, Math.min(1000, score));
-
-        animateCount("mainScore", score);
-        document.getElementById('entropyHash').textContent = entropy.toFixed(6);
-        document.getElementById('progressBar').style.width = `${(score/1000)*100}%`;
-        document.getElementById('aestheticsScore').textContent = aestheticPoints > 0 ? `+${aestheticPoints}` : aestheticPoints;
-        document.getElementById('flowScore').textContent = flowPoints > 0 ? `+${flowPoints}` : flowPoints;
-        document.getElementById('realismScore').textContent = realismPoints > 0 ? `+${realismPoints}` : realismPoints;
-        updateTheme(score);
-    }
-
-    function updateTheme(score) {
-        const scoreTxt = document.getElementById('mainScore'); const bar = document.getElementById('progressBar'); const tierLbl = document.getElementById('tierLabel');
-        let tierName = "TRASH"; let colorClass = "text-hytale-red"; let bgClass = "bg-hytale-red"; let borderClass = "border-hytale-red";
-
-        if (score >= 900) { tierName = "GOD TIER"; colorClass = "text-hytale-gold"; bgClass = "bg-hytale-gold"; borderClass = "border-hytale-gold"; scoreTxt.classList.add('text-magic'); } 
-        else if (score >= 750) { tierName = "VALID OG"; colorClass = "text-hytale-green"; bgClass = "bg-hytale-green"; borderClass = "border-hytale-green"; scoreTxt.classList.remove('text-magic'); } 
-        else if (score >= 600) { tierName = "SEMI OG"; colorClass = "text-purple-400"; bgClass = "bg-purple-400"; borderClass = "border-purple-400"; scoreTxt.classList.remove('text-magic'); } 
-        else if (score >= 500) { tierName = "UNCOMMON"; colorClass = "text-hytale-blue"; bgClass = "bg-hytale-blue"; borderClass = "border-hytale-blue"; scoreTxt.classList.remove('text-magic'); } 
-        else if (score >= 350) { tierName = "COMMON"; colorClass = "text-gray-400"; bgClass = "bg-gray-400"; borderClass = "border-gray-400"; scoreTxt.classList.remove('text-magic'); }
-        else { scoreTxt.classList.remove('text-magic'); }
-
-        tierLbl.textContent = tierName;
-        tierLbl.className = `inline-block px-3 py-1 bg-hytale-bg border ${borderClass} ${colorClass} text-xs font-bold font-rpg uppercase rounded shadow-sm transition-all duration-500`;
-        scoreTxt.className = `text-7xl md:text-8xl font-black font-rpg drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)] transition-colors duration-500 ${score >= 900 ? 'text-magic' : colorClass}`;
-        bar.className = `h-full w-0 transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(255,255,255,0.2)] ${bgClass}`;
-    }
-
-    function handleEnter(e) { if (e.key === "Enter") calculateScore(); }
-    function clearAll() { 
-        document.getElementById('nameInput').value = ''; 
-        document.getElementById('emptyState').classList.remove('hidden'); 
-        document.getElementById('results').classList.add('hidden'); 
-        document.getElementById('statusBadges').classList.add('hidden');
-    }
-</script>
+        function handleEnter(e) { if (e.key === "Enter") calculateScore(); }
+        function clearAll() { 
+            document.getElementById('nameInput').value = ''; 
+            document.getElementById('emptyState').classList.remove('hidden'); 
+            document.getElementById('results').classList.add('hidden'); 
+            document.getElementById('statusBadges').classList.add('hidden');
+        }
+    </script>
 
 </body></html>
